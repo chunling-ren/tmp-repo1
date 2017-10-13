@@ -1,7 +1,7 @@
 version: i
 jobs:
    build:
-    machine: true
+     machine: true
      steps:
        - checkout
        - run: echo "hello world"
