@@ -1,6 +1,10 @@
 version: i
 jobs:
    build:
+    docker:
+      - image: buildpack-deps:trusty # primary container
+        environment:
+          ENV: CI
      steps:
        - checkout
        - run: echo "hello world"
